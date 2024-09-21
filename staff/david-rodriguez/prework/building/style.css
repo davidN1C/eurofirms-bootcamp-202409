@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+}
+
+.wall {
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    position: absolute;
+    top: 38px;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 32px solid transparent;
+    border-bottom: 20px solid black;
+    position: absolute;
+    top: 18px;
+}
+
+.door {
+    width: 10px;
+    height: 15px;
+    border: 1px solid black;
+    position: absolute;
+    top: 73px;
+    left: 17px;
+}
+
+.window-container {
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    background-color: aqua;
+    position: absolute;
+    top: 50px;
+    left: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.window {
+    width: 50%;
+    height: 100%;
+    border: 1px dotted black;
+}
+
+.volley-pitch {
+    width: 25px;
+    height: 30px;
+    border: 1px solid black;
+    position: absolute;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    transform: rotateX(180deg);
+}
+
+
+/* Práctica libre*/
+
+.sun {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(224, 224, 12);
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 247px;
+    z-index: 1;
+}
+
+.triangle1 {
+    width: 0px;
+    height: 0px;
+    border-left: 30px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 25px solid rgb(119, 67, 67);
+    position: absolute;
+    top: 30px;
+    left: 240px;
+    z-index: 3;
+}
+
+.triangle2 {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 15px solid brown;
+    position: absolute;
+    top: 40px;
+    left: 210px;
+    z-index: 4;
+}
+
+.triangle3 {
+    width: 0px;
+    height: 0px;
+    border-left: 40px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 20px solid rgb(61, 6, 6);
+    position: absolute;
+    top: 35px;
+    left: 210px;
+    z-index: 2;
+}
+
+.tree1 {
+    position: absolute;
+    top: 72px;
+    left: 235px;
+    z-index: 4;
+}
+
+.trunk1 {
+    width: 2px;
+    height: 10px;
+    background-color: brown;
+}
+
+.treetop1 {
+    width: 10px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: green;
+    position: relative;
+    bottom: 15px;
+    right: 4px;
+}
+
+.tree2 {
+    position: absolute;
+    top: 75px;
+    left: 260px;
+    z-index: 4;
+}
+
+.tree3 {
+    position: absolute;
+    top: 95px;
+    left: 240px;
+    z-index: 4;
+}
+
+.tree4 {
+    position: absolute;
+    top: 85px;
+    left: 222px;
+    z-index: 4;
+}
+
+.tree5 {
+    position: absolute;
+    top: 63px;
+    left: 217px;
+    z-index: 4;
+}
+
+
+
+.river-p1 {
+    width: 30px;
+    height: 4px;
+    background-color: blue;
+    transform: rotate(135deg);
+    position: absolute;
+    top: 55px;
+    left: 230px;
+    z-index: 1;
+}
+
+.river-p2 {
+    width: 30px;
+    height: 4px;
+    background-color: blue;
+    transform: rotate(10deg);
+    position: absolute;
+    top: 64px;
+    left: 235px;
+    z-index: 1;
+}
+
+.river-p3 {
+    width: 50px;
+    height: 4px;
+    background-color: blue;
+    transform: rotate(135deg);
+    position: absolute;
+    top: 85px;
+    left: 220px;
+    z-index: 1;
+}

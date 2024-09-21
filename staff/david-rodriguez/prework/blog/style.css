@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+}
+
+.page {
+    width: 100%;
+    height: 120vh;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+}
+
+.header {
+    width: 100%;
+    height: 8%;
+    border: 2px solid rgb(139, 101, 53);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2px;
+    background-color: rgb(233, 167, 86);
+    position: sticky;
+    top: 10px;
+
+}
+
+.title-header {
+    width: 20%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.header-box {
+    width: 40%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    align-items: center;
+
+}
+
+.navigator {
+    width: 40%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form {
+    width: 60%;
+    height: 35%;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.search {
+    width: 20%;
+    height: 35%;
+    border: 1px solid black;
+}
+
+
+.logout {
+    width: 20%;
+    height: 35%;
+    border: 1px solid black;
+}
+
+.main {
+    width: 100%;
+    height: 80%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.main-box {
+    width: 50%;
+    height: 100%;
+    border: 1px solid black;
+    padding: 5px;
+    /* no funciona */
+    gap: 5px;
+}
+
+
+.image-box {
+    width: 50%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.section-1 {
+    width: 100%;
+    height: 33%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 5px;
+}
+
+.section-1-title {
+    width: 100%;
+    height: 20%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.articles-s1 {
+    width: 100%;
+    height: 80%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.article-s1-1 {
+    width: 33%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.article-s1-2 {
+    width: 34%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.article-s1-3 {
+    width: 33%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.section-2 {
+    width: 100%;
+    height: 33%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    gap: 5px;
+}
+
+.section-2-1 {
+    width: 33%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 5px;
+}
+
+.text-section-2-1 {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.article-s2-1-1 {
+    width: 100%;
+    height: 45%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.article-s2-1-2 {
+    width: 100%;
+    height: 45%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+.section-2-2 {
+    width: 34%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 5px;
+}
+
+.text-section-2-2 {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.article-s2-2-1 {
+    width: 50%;
+    height: 45%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.article-s2-2-2 {
+    width: 50%;
+    height: 45%;
+    border: 1px solid black;
+    align-self: flex-end;
+    border-radius: 5px;
+}
+
+
+.section-2-3 {
+    width: 33%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.section-3 {
+    width: 100%;
+    height: 33%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    object-fit: contain;
+}
+
+.article-s3-1 {
+    /* no se adapta al div padre */
+    width: 0em;
+    height: 0em;
+    border-right: 35em solid transparent;
+    border-left: 0em solid transparent;
+    border-top: 15em solid black;
+    border-radius: 1em;
+
+
+}
+
+.image-box {
+    width: 50%;
+    height: 100%;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+
+.footer {
+    width: 100%;
+    height: 10%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(233, 167, 86);
+}
+
+/*
+.contact {
+    width: 10%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.terms-conditions {
+    width: 10%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.sponsors {
+    width: 10%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.privacy-policies {
+    width: 10%;
+    height: 100%;
+    border: 1px solid black;
+}
+    */
