@@ -13,7 +13,7 @@
 
 .header {
     width: 100%;
-    height: 8%;
+    height: 5%;
     border: 2px solid rgb(139, 101, 53);
     display: flex;
     flex-direction: row;
@@ -22,19 +22,26 @@
     background-color: rgb(233, 167, 86);
     position: sticky;
     top: 10px;
-
 }
+
 
 .title-header {
     width: 20%;
     height: 100%;
     border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    color: rgb(105, 3, 37);
 }
 
 .header-box {
     width: 40%;
     height: 100%;
-    border: 1px solid black;
+    border: 1px solid rgb(214, 194, 138);
     display: flex;
     justify-content: flex-end;
     gap: 25px;
@@ -43,7 +50,7 @@
 }
 
 .navigator {
-    width: 40%;
+    width: 65%;
     height: 100%;
     border: 1px solid black;
     display: flex;
@@ -57,19 +64,31 @@
     height: 35%;
     border: 1px solid black;
     border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blanchedalmond;
 }
 
 .search {
-    width: 20%;
+    width: 30%;
     height: 35%;
     border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 .logout {
-    width: 20%;
-    height: 35%;
+    width: 45px;
+    height: 45px;
     border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }
 
 .main {
@@ -223,26 +242,36 @@
     border: 1px solid black;
 }
 
+.text-section-2-3 {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+
 .section-3 {
     width: 100%;
     height: 33%;
     border: 1px solid black;
     display: flex;
-    flex-direction: row;
-    padding: 5px;
-    object-fit: contain;
+    justify-content: center;
+    position: relative;
 }
 
 .article-s3-1 {
-    /* no se adapta al div padre */
-    width: 0em;
-    height: 0em;
-    border-right: 35em solid transparent;
-    border-left: 0em solid transparent;
-    border-top: 15em solid black;
-    border-radius: 1em;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(138, 88, 28);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%);
+}
 
-
+.article-s3-2 {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(228, 144, 41);
+    clip-path: polygon(0% 100%, 0% 0%, 100% 100%, 100% 100%);
+    position: absolute;
 }
 
 .image-box {
@@ -261,35 +290,54 @@ img {
 
 .footer {
     width: 100%;
-    height: 10%;
+    height: 5%;
     border: 2px solid black;
     display: flex;
     flex-direction: row;
     background-color: rgb(233, 167, 86);
+    justify-content: flex-end;
+    padding: 5px;
+    gap: 5px;
+    text-align: center;
 }
 
-/*
+
 .contact {
-    width: 10%;
+    width: 7%;
     height: 100%;
     border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .terms-conditions {
-    width: 10%;
+    width: 9%;
     height: 100%;
     border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sponsors {
-    width: 10%;
+    width: 7%;
     height: 100%;
     border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .privacy-policies {
-    width: 10%;
+    width: 9%;
     height: 100%;
     border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-    */
