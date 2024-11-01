@@ -75,4 +75,5 @@ function isUserLoggedIn() {
 
 function logoutUser() {
     delete sessionStorage.userId
+
 }

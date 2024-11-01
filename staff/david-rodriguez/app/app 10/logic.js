@@ -67,6 +67,7 @@ function getUserName() {
     return user.name
 }
 
+
 function isUserLoggedIn() {
     if (sessionStorage.userId !== undefined) return true
 

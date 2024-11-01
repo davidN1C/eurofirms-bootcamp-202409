@@ -73,6 +73,7 @@ function isUserLoggedIn() {
     return false
 }
 
+
 function logoutUser() {
     delete sessionStorage.userId
 }

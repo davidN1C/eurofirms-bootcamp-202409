@@ -15,4 +15,5 @@ var welcomeView = React.createElement('main', null, [welcomeTitle, welcomeIntro]
 var rootElement = document.querySelector('#root')
 var root = ReactDOM.createRoot(rootElement)
 
+
 root.render([title, welcomeView])
