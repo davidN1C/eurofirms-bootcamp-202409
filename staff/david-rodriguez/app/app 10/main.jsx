@@ -1,27 +1,26 @@
 var useState = React.useState
-var useEffect = React.useState
+var useEffect = React.useEffect
 
-function WelcomeView(pros) {
+function WelcomeView(props) {
     console.log('WelcomeView -> render')
 
     /*
-    props -> { onRegisterClick, onLogisClick }
+    props -> { onRegisterClick, onLoginClick }
     */
 
     return <main>
         <h2>Welcome!</h2>
         <p>
-            Please, <a href="" onClick={function (envent) {
+            Please, <a href="" onClick={function (event) {
                 event.preventDefault()
 
-                PropTypes.onRegisterClick()
+                props.onRegisterClick()
             }}>Register</a> or <a href="" onClick={function (event) {
                 event.preventDefault()
 
-                PropTypes.onLoginClick()
+                props.onLoginClick()
             }}>Login</a>.
         </p>
-
     </main>
 }
 
@@ -29,7 +28,7 @@ function RegisterView(props) {
     console.log('RegisterView -> render')
 
     /*
-    props -> {onLoginClick, onRegisterSuccess}
+    props -> { onLoginClick, onRegisterSuccess }
     */
 
     return <main>
@@ -84,7 +83,7 @@ function LoginView(props) {
     console.log('LoginView -> render')
 
     /*
-    props -> { onRegisterClick, onLoginSuccess}
+    props -> { onRegisterClick, onLoginSuccess }
     */
 
     return <main>
@@ -101,7 +100,7 @@ function LoginView(props) {
             try {
                 loginUser(username, password)
 
-                props.onLogingSuccess()
+                props.onLoginSuccess()
             } catch (error) {
                 alert(error.message)
 
@@ -114,7 +113,7 @@ function LoginView(props) {
             <label htmlFor="password">Password</label>
             <input type="password" id="password" />
 
-            <button type="sumit">Login</button>
+            <button type="submit">Login</button>
         </form>
 
         <p></p>
@@ -138,7 +137,7 @@ function HomeView(props) {
     var name = nameState[0]
     var setName = nameState[1]
 
-    console.log('HomeVies -> state: name = ' + name)
+    console.log('HomeView -> state: name = ' + name)
 
     useEffect(function () {
         var name = getUserName()
@@ -216,6 +215,6 @@ function App() {
 }
 
 var rootElement = document.querySelector('#root')
-var root = ReactDOM.createRoot(roorElement)
+var root = ReactDOM.createRoot(rootElement)
 
-roor.render(<App />)
+root.render(<App />)

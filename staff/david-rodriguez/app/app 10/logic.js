@@ -13,11 +13,11 @@ function loginUser(username, password) {
 
     if (user === undefined) throw new Error('wrong credentials')
 
-    sessionStorage.userId = user.Id
+    sessionStorage.userId = user.id
 }
 
 function registerUser(name, email, username, password) {
-    if (typeof name != 'string') throw new Error('invalid name')
+    if (typeof name !== 'string') throw new Error('invalid name')
     if (name.length < 1) throw new Error('invalid name length')
 
     if (typeof email !== 'string') throw new Error('invalid email')
@@ -66,7 +66,6 @@ function getUserName() {
 
     return user.name
 }
-
 
 function isUserLoggedIn() {
     if (sessionStorage.userId !== undefined) return true
